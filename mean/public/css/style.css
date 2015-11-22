@@ -1,0 +1,65 @@
+body {
+  background-color: #f8f8f8;
+}
+#wrapper {
+  width: 100%;
+}
+#wrapper .navbar {
+  margin-bottom: 0;
+}
+
+/*----------------------------------------
+    top navigation
+----------------------------------------*/
+.navbar-top-links {
+  margin-right: 0;
+}
+.navbar-top-links li {
+  display: inline-block;
+}
+.navbar-top-links li:last-child {
+  margin-right: 15px;
+}
+.navbar-top-links li a {
+  padding: 15px;
+  min-height: 50px;
+}
+.navbar-top-links .dropdown-user {
+  right: 0;
+  left: auto;
+}
+.navbar-top-links .dropdown-menu li {
+  display: block;
+}
+.navbar-top-links .dropdown-menu .box {
+  padding: 3px 20px;
+  min-height: 0;
+}
+
+/*----------------------------------------
+    aside navigation
+----------------------------------------*/
+.sidebar {
+  z-index: 1;
+  position: absolute;
+  width: 200px;
+  margin-top: 151px;
+}
+.sidebar ul li {
+  border-bottom: 1px solid #e7e7e7;
+}
+.sidebar .sidebar-nav.navbar-collapse {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/*----------------------------------------
+    content
+----------------------------------------*/
+#page-wrapper {
+  position: inherit;
+  margin: 0 0 0 200px;
+  padding: 0 30px;
+  border-left: 1px solid #e7e7e7;
+  background-color: #fff;
+}

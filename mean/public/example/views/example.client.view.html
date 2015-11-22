@@ -1,0 +1,59 @@
+<section ng-controller="ExampleController">
+  <div data-ng-show="!authentication.user">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          <div class="login-panel panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Please Sign</h3>
+            </div>
+            <div class="panel-body">
+              <form role="form">
+                <fieldset>
+                  <a href="/signup" class="btn btn-lg btn-success btn-block">Signup</a>
+                  <a href="/signin" class="btn btn-lg btn-success btn-block">Signin</a>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div><!--  /.row -->
+    </div><!--  /.container -->
+  </div>
+  <div data-ng-show="authentication.user">
+    <div id="wrapper">
+      <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-header">
+          <img src="img/logo.png" alt="Logo">
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="/#!/">
+              <i class="fa fa-user fa-fw"></i>
+              <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-user">
+              <li>
+                <span class="box">Hello <span data-ng-bind="authentication.user.fullName"></span></span>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <span class="box"><a href="/signout"><i class="fa fa-sign-out fa-fw"></i> Signout</a></span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="navbar-default sidebar" role="navigation">
+          <div class="sidebar-nav navbar-collapse">
+            <ul class="nav" >
+              <li><a href="/#!/chat"><i class="fa fa-weixin"></i> Chat</a></li>
+              <li><a href="/#!/articles"><i class="fa fa-list"></i> List Articles</a></li>
+              <li><a href="/#!/articles/create"><i class="fa fa-newspaper-o"></i> Create Article</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div><!-- /#wrapper  -->
+  </div>
+</section>
