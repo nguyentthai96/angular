@@ -20,6 +20,6 @@ install Node, Git, MongoDB, Bower
 
 * host database mongo: C:\mongodb\bin\mongod.exe
 
-Go to your root app and run following command
+Go to your root app and run following command:
 * install dependency package: npm install
 * application : node server
