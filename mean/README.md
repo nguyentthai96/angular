@@ -12,7 +12,10 @@ Version: 1.0.1
 
 ## Prequisites
 
-install Node, Git, MongoDB, Bower
+* Node
+* Git
+* Bower
+* [MongoDB](https://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/)
 
 
 
